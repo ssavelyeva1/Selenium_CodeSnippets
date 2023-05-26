@@ -17,7 +17,6 @@ public class MobileEmulatorTest {
 		ChromeDriver driver = new ChromeDriver();
 
 		DevTools devTools = driver.getDevTools();
-
 		devTools.createSession();
 
 		// sending commands to CDP (Chrome Devtools Protocol)
@@ -25,15 +24,16 @@ public class MobileEmulatorTest {
 		devTools.send(Emulation.setDeviceMetricsOverride(600, 1000, 50, true, Optional.empty(), Optional.empty(),
 				Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty(),
 				Optional.empty(), Optional.empty()));
-		
+
 		driver.get("https://rahulshettyacademy.com/angularAppdemo/");
-		
+
 		driver.findElement(By.cssSelector(".navbar-toggler")).click();
 		Thread.sleep(3000);
-		
+
 		driver.findElement(By.linkText("Library")).click();
-		
-		//Network.getRequestPostData(null)
+
+		// Network.getRequestPostData(null)
+
 	}
 
 }
