@@ -33,6 +33,7 @@ public class MobileEmulatorTest {
 		
 		driver.findElement(By.linkText("Library")).click();
 		
+		//Network.getRequestPostData(null)
 	}
 
 }
