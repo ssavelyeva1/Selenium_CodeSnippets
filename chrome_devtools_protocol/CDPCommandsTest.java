@@ -16,7 +16,7 @@ public class CDPCommandsTest {
 		DevTools devTools = driver.getDevTools();
 		devTools.createSession();
 
-		Map deviceMetrics = new HashMap();
+		Map<String, Object> deviceMetrics = new HashMap<String, Object>();
 		deviceMetrics.put("width", 600);
 		deviceMetrics.put("height", 600);
 		deviceMetrics.put("deviceScaleFactor", 50);
